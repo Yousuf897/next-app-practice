@@ -1,7 +1,7 @@
 import { prisma } from "@/prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 import studentSchema from "./schema";
-import { error } from "console";
+
 
 
 export async function GET(request: NextRequest) {
