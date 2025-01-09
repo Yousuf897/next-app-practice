@@ -20,3 +20,14 @@ model Student {
   active    Boolean  @default(true)
   createdAt DateTime @default(now())
 }
+
+model Vehicle {
+  id        Int      @id @default(autoincrement())
+  make      String
+  model     String
+  year      Int
+  color     String
+  vin       String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
