@@ -1,8 +1,6 @@
 import { prisma } from "@/prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 import studentSchema from "../schema";
-import { bigint } from "zod";
-import { Prisma } from "@prisma/client";
 
 interface Props {
    params: { id: number };
